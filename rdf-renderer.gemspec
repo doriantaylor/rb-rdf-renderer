@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['code@doriantaylor.com']
   spec.license       = 'Apache-2.0'
   spec.homepage      = 'https://github.com/doriantaylor/rb-rdf-renderer'
-  spec.summary       = 'Render a patch of RDF graph as JSON or (X)HTML'
+  spec.summary       = 'Render a patch of RDF graph as JSON-LD and/or (X)HTML'
   spec.description   = <<-DESC
   DESC
 
