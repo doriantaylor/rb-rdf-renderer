@@ -8,6 +8,7 @@ class RDF::Renderer::Fresnel
 
   # Initialize a Fresnel ensemble by giving it an RDF::Queryable to
   # extract lenses, formats etc. from.
+
   def initialize repo
     rehash repo
   end
