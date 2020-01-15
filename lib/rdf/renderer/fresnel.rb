@@ -6,6 +6,21 @@ class RDF::Renderer::Fresnel
   # We *will* however need some mechanism for describing reverse
   # properties.
 
+  private
+
+  # 
+  def select_lens subject, repo: nil, group: nil, default: nil, label: nil
+    # check against instance lenses
+
+    # if we find one then great, we stop
+
+    # check against class lenses
+
+    # maybe we have a map that goes like { lens => score }
+  end
+
+  public
+
   # Initialize a Fresnel ensemble by giving it an RDF::Queryable to
   # extract lenses, formats etc. from.
 
