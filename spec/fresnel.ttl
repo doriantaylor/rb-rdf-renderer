@@ -1,0 +1,24 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix fresnel: <http://www.w3.org/2004/09/fresnel#> .
+@prefix flx:     <https://privatealpha.com/ontology/fresnel-label/1#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<urn:uuid:946bfa70-1404-4c1d-a986-47f282332e28> a fresnel:Lens ;
+  fresnel:classLensDomain foaf:Person ;
+  fresnel:showProperties ( _:name foaf:knows ) .
+
+_:name a fresnel:PropertyDescription ;
+  fresnel:alternateProperties ( foaf:name _:composite-name ) .
+
+_:composite-name a fresnel:PropertyDescription ;
+  fresnel:mergeProperties ( _:given-name _:surname ) .
+
+_:given-name a fresnel:PropertyDescription ;
+  fresnel:alternateProperties
+    ( foaf:givenName foaf:firstName foaf:givenname ) .
+
+_:surname a fresnel:PropertyDescription ;
+  fresnel:alternateProperties
+    ( foaf:familyName foaf:surname foaf:family_name ) .

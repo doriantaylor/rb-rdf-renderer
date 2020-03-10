@@ -1,0 +1,15 @@
+{
+    "@context": {
+        "@base": "https://doriantaylor.com/",
+        "foaf": "http://xmlns.com/foaf/0.1/"
+    },
+    "@id": "person/dorian-taylor",
+    "@type": "foaf:PersonalProfileDocument",
+    "foaf:primaryTopic" {
+        "@id": "person/dorian-taylor#me",
+        "@type": "foaf:Person",
+        "foaf:name": "Dorian Taylor",
+        "foaf:givenName": "Dorian",
+        "foaf:familyName": "Taylor"
+    }
+}
